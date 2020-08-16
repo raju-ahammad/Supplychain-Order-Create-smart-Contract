@@ -1,0 +1,258 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "name": "supplier",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "deliveryCompany",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "customer",
+        "type": "address"
+      }
+    ],
+    "name": "OrderCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "name": "supplier",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "deliveryCompany",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "customer",
+        "type": "address"
+      }
+    ],
+    "name": "OrderDelivering",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "name": "supplier",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "deliveryCompany",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "customer",
+        "type": "address"
+      }
+    ],
+    "name": "OrderDelivered",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "name": "supplier",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "deliveryCompany",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "customer",
+        "type": "address"
+      }
+    ],
+    "name": "OrderAccepted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "name": "supplier",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "deliveryCompany",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "customer",
+        "type": "address"
+      }
+    ],
+    "name": "OrderDeclined",
+    "type": "event"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getOrder",
+    "outputs": [
+      {
+        "name": "",
+        "type": "string"
+      },
+      {
+        "name": "",
+        "type": "string"
+      },
+      {
+        "name": "",
+        "type": "address"
+      },
+      {
+        "name": "",
+        "type": "address"
+      },
+      {
+        "name": "",
+        "type": "address"
+      },
+      {
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_title",
+        "type": "string"
+      },
+      {
+        "name": "_description",
+        "type": "string"
+      },
+      {
+        "name": "_deliveryCompany",
+        "type": "address"
+      },
+      {
+        "name": "_customer",
+        "type": "address"
+      }
+    ],
+    "name": "createOrder",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "startDeliveringOrder",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "stopDeliveringOrder",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "acceptOrder",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "declineOrder",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
